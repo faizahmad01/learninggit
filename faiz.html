@@ -1,0 +1,106 @@
+
+<html>
+<head>
+<title>NEW PROJECT</title>
+</head>
+<body> 
+  <div id="nav">
+      <center><h1>Welcome To Learning Portal</h1></center>
+ </div>
+
+<div class="slideshow-container">
+   <div class="mySlides fade">
+   <div class="numbertext"></div>
+   <center><img src="fg.png" width="100%" height="400">,</center>
+   <div class="text"><center>COURSE CONTENT</center></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="po.png"  width="100%" height="400"></center><br>
+  <div class="text"><center>PYTHON</center></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+ <center><img src="sa.jpg"  width="100%" height="400"><center><br>
+  <div class="text"><center>Choose The Best Way To Learn</center></div>
+</div>
+
+
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>	
+
+<hr>
+<div class="naija-flag">
+    <div class="first-green"><center><img src="fz.jpg" width="200px" height="200px" bottom="10px    "></center></div>
+    <div class="white"></div>
+    <div class="second-green"></div>
+</div>
+
+<style type="text/css">
+    #nav{background-color:darkred;
+   text-shadow:;
+   color: white;
+   text-decoration-color: white;
+   font-family:;
+   padding:10px;}
+
+   
+   .naija-flag {
+  display: flex;
+}
+.first-green {
+  height: 400px;
+  width: 600px;
+  background-color: whitesmoke;
+  border: 3px solid dimgrey;
+}
+.white {
+  height: 400px;
+  width: 600px;
+  background-color: whitesmoke;
+  border: 3px solid dimgrey;
+}
+.second-green {
+  height: 400px;
+  width: 600px;
+  background-color: whitesmoke;
+  border: 3px solid dimgrey;
+}
+
+
+</style>	
+
+</body>
+</html>
